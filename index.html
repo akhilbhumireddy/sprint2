@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container text-center text-white">
+        <h1 class="display-4 font-weight-bold">Welcome to My Portfolio</h1>
+        <p class="lead mt-3">Creative Developer | Designer | Innovator</p>
+        <a href="#projects" class="btn btn-primary mt-4">View Projects</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+      <div class="container text-center">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description mt-3">
+          I am a passionate developer who loves building creative solutions to
+          complex problems. I specialize in web development, design, and product
+          innovation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="section-title">Projects</h2>
+        <div class="row mt-5">
+          <!-- Portfolio Project 1 -->
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <img
+                src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/rock_paper_scissors_game.png"
+                class="img-fluid"
+                alt="Project 1"
+              />
+              <div class="card-content">
+                <h5 class="card-title">Rock Paper Scissors Game</h5>
+                <p class="card-description">
+                  Developed interactive Rock Paper Scissors game with modal
+                  rules display and dynamic scoring using React and Styled
+                  Components..
+                </p>
+                <a
+                  href="https://rockpaperapp2.ccbp.tech/"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Project 2 -->
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <img
+                src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/nxt_trendz_fashion_retail_website.png"
+                class="img-fluid"
+                alt="Project 2"
+              />
+              <div class="card-content">
+                <h5 class="card-title">Nxt Trendz: Fashion Retail Website</h5>
+                <p class="card-description">
+                  Developed advanced e-commerce cart system with intuitive UX
+                  and robust management capabilities.
+                </p>
+                <a
+                  href="https://github.com/akhilbhumireddy/nxttrendz.git"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Project 3 -->
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <img
+                src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/nxtwatch:_video_streaming_platform.png"
+                class="img-fluid"
+                alt="Project 3"
+              />
+              <div class="card-content">
+                <h5 class="card-title">Nxtwatch: Video Streaming Platform</h5>
+                <p class="card-description">
+                  Built Nxt Watch using React and Styled Components, showcasing
+                  responsive design, API-driven video content, authentication
+                  handling, and theme customization.
+                </p>
+                <a
+                  href="https://github.com/akhilbhumireddy/nxtwatch.git"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-description mt-3">
+          Have a question or want to work together? Get in touch!
+        </p>
+
+        <form class="contact-form mt-4">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-4 bg-dark text-white text-center">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <a href="#" class="back-to-top">Back to Top</a>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
